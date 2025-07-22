@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 // Test case: GET /posts/:id returns correct post data
-test("GET /posts returns status 200", async ({ request }) => {
+test("GET posts returns status 200", async ({ request }) => {
   // Send GET request to fetch post with ID 1
   const response = await request.get("/posts/1");
 
