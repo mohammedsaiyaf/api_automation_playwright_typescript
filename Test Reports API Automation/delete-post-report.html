@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API Test Report - DELETE /posts/:id</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #ecf0f1;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .pass {
+            color: green;
+            font-weight: bold;
+        }
+        .fail {
+            color: red;
+            font-weight: bold;
+        }
+        .note {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #eef;
+            border-left: 4px solid #3498db;
+        }
+    </style>
+</head>
+<body>
+<h1>🧪 Playwright API Test Report</h1>
+<h2>Test Case: DELETE /posts/:id</h2>
+<p><strong>Description:</strong> Verifies that the DELETE request to remove post with ID <code>3</code> returns status 200 and an empty object response.</p>
+
+<h2>📝 Steps Executed</h2>
+<table>
+    <tr>
+        <th>Step</th>
+        <th>Action</th>
+        <th>Expected Result</th>
+        <th>Status</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Send DELETE to <code>/posts/3</code></td>
+        <td>DELETE request is sent</td>
+        <td class="pass">Passed</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Verify status code</td>
+        <td>Status code is <code>200</code></td>
+        <td class="pass">Passed</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Extract response body as text</td>
+        <td>Response is extracted</td>
+        <td class="pass">Passed</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Log response</td>
+        <td>Response is printed in console</td>
+        <td class="pass">Passed</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Assert body equals <code>"{}"</code></td>
+        <td>Body matches expected placeholder format</td>
+        <td class="pass">Passed</td>
+    </tr>
+</table>
+</body>
+</html>

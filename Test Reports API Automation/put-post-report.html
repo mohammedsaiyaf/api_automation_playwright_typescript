@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>API Test Report - PUT /posts/1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #ecf0f1;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    .pass {
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+<h1>🧪 Playwright API Test Report</h1>
+<h2>Test Case: PUT /posts/1</h2>
+<p><strong>Description:</strong> Validates that a PUT request to update post <code>1</code> returns a 200 status and the expected updated content.</p>
+
+<h2>📝 Steps Executed</h2>
+<table>
+  <tr>
+    <th>Step</th>
+    <th>Action</th>
+    <th>Expected Result</th>
+    <th>Status</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Define updated payload</td>
+    <td>Payload contains new title and body</td>
+    <td class="pass">Passed</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Send PUT to <code>/posts/1</code></td>
+    <td>Request is sent with updated payload</td>
+    <td class="pass">Passed</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Check HTTP status</td>
+    <td>Status code is <code>200</code></td>
+    <td class="pass">Passed</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Parse response as JSON</td>
+    <td>Response is parsed successfully</td>
+    <td class="pass">Passed</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Validate response matches payload</td>
+    <td>Response object matches updated values</td>
+    <td class="pass">Passed</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Assert <code>id</code> is <code>1</code></td>
+    <td>ID is correct</td>
+    <td class="pass">Passed</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Assert <code>title</code> is <code>"Updated Title"</code></td>
+    <td>Title is correct</td>
+    <td class="pass">Passed</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Assert <code>body</code> is <code>"Updated body content"</code></td>
+    <td>Body is correct</td>
+    <td class="pass">Passed</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Assert <code>userId</code> is <code>10</code></td>
+    <td>User ID is correct</td>
+    <td class="pass">Passed</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Console logs</td>
+    <td>ID, Title, Body, and UserID are printed</td>
+    <td class="pass">Passed</td>
+  </tr>
+</table>
+</body>
+</html>

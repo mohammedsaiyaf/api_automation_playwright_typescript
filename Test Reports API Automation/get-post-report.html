@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>API Test Report - GET /posts/1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #ecf0f1;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .pass {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<h1>🧪 Playwright API Test Report</h1>
+<h2>Test Case: GET /posts/1</h2>
+<p><strong>Description:</strong> Validates that a GET request to fetch post <code>1</code> returns status 200 and correct post data.</p>
+
+<h2>📝 Steps Executed</h2>
+<table>
+    <tr>
+        <th>Step</th>
+        <th>Action</th>
+        <th>Expected Result</th>
+        <th>Status</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Send GET request to <code>/posts/1</code></td>
+        <td>API returns a response</td>
+        <td class="pass">Passed</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Verify status code</td>
+        <td>Response status is <code>200</code></td>
+        <td class="pass">Passed</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Parse response as JSON</td>
+        <td>Response body parsed</td>
+        <td class="pass">Passed</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Check <code>id</code> field</td>
+        <td><code>id</code> is <code>1</code></td>
+        <td class="pass">Passed</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Check <code>userId</code> field</td>
+        <td><code>userId</code> is <code>1</code></td>
+        <td class="pass">Passed</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Validate <code>title</code></td>
+        <td>Matches expected string</td>
+        <td class="pass">Passed</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>Validate <code>body</code> content</td>
+        <td>Contains "quia et suscipit"</td>
+        <td class="pass">Passed</td>
+    </tr>
+</table>
+</body>
+</html>
